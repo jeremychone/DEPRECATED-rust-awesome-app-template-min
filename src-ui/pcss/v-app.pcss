@@ -1,0 +1,44 @@
+
+
+v-app {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 3rem 1fr;
+
+  &.min-nav {
+    grid-template-columns: 0rem 1fr;
+  }
+
+  header {
+    padding: 0 .5rem;
+    background: hsl(0, 100%, 91%);
+    grid-column: 1/3;
+
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+    gap: .5rem;
+
+  }
+
+  nav {
+    cursor: pointer;
+    background: hsl(100, 100%, 91%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    &:active {
+      font-size: 1.25rem;
+    }
+  }
+
+  main {
+    background: hsl(200, 100%, 91%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
